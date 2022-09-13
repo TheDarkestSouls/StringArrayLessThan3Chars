@@ -10,16 +10,22 @@ StringArray[2] = Console.ReadLine();
 StrArray(StringArray);
 
 
-void StrArray(string[] array)
+string[] StrArray(string[] array)
 {
+    string[] result = new string[array.Length];
+    int temp = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
         {
-            Console.Write($"{array[i]} ");
+            result[temp] = array[i];
+            temp++;
         }
     }
+    return result;
 }
+
+
 
 // int count(string[] arr)
 // {
