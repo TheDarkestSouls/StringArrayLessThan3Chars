@@ -7,7 +7,8 @@ StringArray[1] = Console.ReadLine();
 Console.WriteLine("Enter 3rd phrase: ");
 StringArray[2] = Console.ReadLine();
 
-StrArray(StringArray);
+
+ShowArray(StrArray(StringArray));
 
 
 string[] StrArray(string[] array)
@@ -25,23 +26,11 @@ string[] StrArray(string[] array)
     return result;
 }
 
-
-
-// int count(string[] arr)
-// {
-//     int sum = 0;
-//     for (int i = 0; i < arr.Length; i++)
-//     {
-//         sum++;
-//     }
-//     return sum;
-// }
-
-// void ShowArray(int[] array)
-// {
-// for (int i = 0; i < array.Length; i++)
-// {
-// Console.Write(array[i] + " ");
-// }
-// Console.WriteLine();
-// }
+void ShowArray(string[] array)
+{
+for (int i = 0; i < array.Length; i++)
+{
+Console.Write(array[i] + " ");
+}
+Console.WriteLine();
+}
